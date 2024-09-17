@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(236, 227, 215);
+    padding-top: 100px;
+}
+input{
+    padding:5px;
+    margin:10px;
+    font-size: 16px;
+}
+button{
+    padding:6px 16px;
+    background-color: rgb(222, 202, 186);
+    color: black;
+    border:none;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(151, 202, 204);
+}
+#result{
+    margin-top: 20px;
+    font-size: 18px;
+    color: gray;
+}
