@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Gender</title>
+    <link rel="stylesheet" href="Gender.css">
+    <script>
+        function selectGender(gender) {
+            const image=document.getElementById('genderImage');
+            const container=document.getElementById('container');
+
+            if(gender==='male'){
+                image.src='https://static.vecteezy.com/system/resources/previews/024/183/502/original/male-avatar-portrait-of-a-young-man-with-a-beard-illustration-of-male-character-in-modern-color-style-vector.jpg';
+                container.style.backgroundcolour='blue';
+            } else if(gender==='female'){
+                image.src='https://static.vecteezy.com/system/resources/previews/024/183/500/original/female-avatar-brunette-woman-portrait-illustration-of-a-female-character-in-a-modern-color-style-vector.jpg';
+                container.style.backgroundcolor='pink';
+            }
+            image.style.display='block';
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Select Gender</h1>
+        <button onclick="selectGender('male')">Male</button>
+        <button onclick="selectGender('female')">Female</button>
+        <div id="imagecontainer">
+            <img id="genderImage"src="" alt="Gender Image">
+        </div>
+    </div>
+</body>
+</html>
