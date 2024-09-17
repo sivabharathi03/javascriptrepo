@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Number</title>
+    <link rel="stylesheet" href="natural.css">
+    <script>
+        function calculatesum(){
+            let n = parseInt(document.getElementById('numberinput').value);
+            let sum=0;
+            for(let i=1;i<=n;i++){
+                sum +=i;
+            }
+            document.getElementById('result').innerHTML="sum of first" +n+"numers is"+sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sum of N Natural Numbers</h1>
+    <input type="number" id="numberinput" placeholder="Enter a Number">
+    <button onclick="calculatesum()">Calculate Sum</button>
+    <p id="result"></p>
+    
+</body>
+</html>
