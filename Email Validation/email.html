@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <script>
+        function ValidateEmail(email){
+            var regex=/^[a-z 0-9]+@[a-z]+\.[a-z]{2,}$/;
+            return regex.test(email);
+        }
+        var emailInput=prompt("Please enter an email address:");
+        var isValid=ValidateEmail(emailInput);
+        if(isValid){
+            alert("The email address "+ emailInput+ " is valid.");
+        }
+        else{
+            alert("The email address "+ emailInput + " is valid.");
+        }
+    </script>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    
+</body>
+</html>
